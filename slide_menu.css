@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-03-28 15:19:03
+ * @version $Id$
+ */
+
+.head {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 128, 0, .5);
+}
+.slide-menu-open .head {
+    left: 300px;
+}
+.bd {
+    position: relative;
+}
+.left {
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 50%;
+    height: 50px;
+    background: yellow;
+}
+.right {
+    position: absolute;
+    top:  0;
+    right: 0;
+    width: 50%;
+    background: gray;
+}
+#slide-container-bg {
+    background: #ff8800;
+}
