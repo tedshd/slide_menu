@@ -1,0 +1,67 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-09-19 00:32:22
+ * @version $Id$
+ */
+
+@import "compass";
+@import "compass/reset";
+
+
+.push-open {
+    overflow: hidden;
+    #push-open-layer {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+    }
+}
+#slide-menu, #slide-container {
+    position: absolute;
+}
+
+#slide-menu, #slide-container, .head {
+    @include transition-property(all);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease);
+    // @include transition-timing-function(cubic-bezier(0, .1, .2, 1));
+}
+
+#slide-menu {
+    z-index: 1000;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: 0;
+    background: rgba(128, 128, 255, .8);
+    overflow: auto;
+}
+#slide-container {
+    background: #666;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+#slide-menu-bg, #slide-container-bg {
+    position: relative;
+}
+#slide-menu.slide-menu-close {
+    left: -300px;
+}
+.slide-push {
+    #slide-container.slide-menu-open {
+        left: 300px;
+    }
+}
+
+/* ---- */
+.slide-menu-open {
+    .head {
+        left: 300px;
+    }
+}
