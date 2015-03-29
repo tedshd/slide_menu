@@ -139,13 +139,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 300px;
 }
 
+/* --menu ico-- */
+/* line 63, ../sass/slide_menu.scss */
+.menu-ico {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+/* line 67, ../sass/slide_menu.scss */
+.menu-ico div {
+  width: 30px;
+  border-top: solid 5px #fff;
+  margin-bottom: 5px;
+  -ms-transform: scale(1) rotate(0) translate(0, 0);
+  -moz-transform:  scale(1, 1) rotateZ(0) translate(0, 0) skew(0, 0);
+  -ms-transform:  scale(1, 1) rotateZ(0) translate(0, 0) skew(0, 0);
+  -webkit-transform:  scale(1, 1) rotateZ(0) translate(0, 0) skew(0, 0);
+  transform:  scale(1, 1) rotateZ(0) translate(0, 0) skew(0, 0);
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 79, ../sass/slide_menu.scss */
+.menu-ico-x .line-top {
+  -ms-transform: scale(1) rotate(-45deg) translate(-16px, 18px);
+  -moz-transform:  scale(1, 1) rotateZ(-45deg) translate(-16px, 18px) skew(0, 0);
+  -ms-transform:  scale(1, 1) rotateZ(-45deg) translate(-16px, 18px) skew(0, 0);
+  -webkit-transform:  scale(1, 1) rotateZ(-45deg) translate(-16px, 18px) skew(0, 0);
+  transform:  scale(1, 1) rotateZ(-45deg) translate(-16px, 18px) skew(0, 0);
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+/* line 83, ../sass/slide_menu.scss */
+.menu-ico-x .line-md {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 86, ../sass/slide_menu.scss */
+.menu-ico-x .line-bottom {
+  -ms-transform: scale(1) rotate(45deg) translate(-8px, -16px);
+  -moz-transform:  scale(1, 1) rotateZ(45deg) translate(-8px, -16px) skew(0, 0);
+  -ms-transform:  scale(1, 1) rotateZ(45deg) translate(-8px, -16px) skew(0, 0);
+  -webkit-transform:  scale(1, 1) rotateZ(45deg) translate(-8px, -16px) skew(0, 0);
+  transform:  scale(1, 1) rotateZ(45deg) translate(-8px, -16px) skew(0, 0);
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
 /* ---- */
-/* line 64, ../sass/slide_menu.scss */
+/* line 94, ../sass/slide_menu.scss */
 .slide-menu-open .head {
   left: 300px;
 }
 
-/* line 68, ../sass/slide_menu.scss */
+/* line 98, ../sass/slide_menu.scss */
 .head {
   z-index: 1;
   position: fixed;

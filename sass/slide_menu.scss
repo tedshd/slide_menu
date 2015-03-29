@@ -59,6 +59,36 @@
     }
 }
 
+/* --menu ico-- */
+.menu-ico {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    div {
+        width: 30px;
+        border-top: solid 5px #fff;
+        margin-bottom: 5px;
+        -ms-transform: scale(1) rotate(0) translate(0, 0);
+        @include simple-transform(1, 0, 0, 0, 0, 0, 0, 0);
+        @include transition-property(all);
+        @include transition-duration(.5s);
+        @include transition-timing-function(ease);
+    }
+}
+.menu-ico-x {
+    .line-top {
+        -ms-transform: scale(1) rotate(-45deg) translate(-16px, 18px);
+        @include simple-transform(1, -45deg, -16px, 18px, 0, 0, 0, 0);
+    }
+    .line-md {
+        @include opacity(0);
+    }
+    .line-bottom {
+        -ms-transform: scale(1) rotate(45deg) translate(-8px, -16px);
+        @include simple-transform(1, 45deg, -8px, -16px, 0, 0, 0, 0);
+    }
+}
+
 /* ---- */
 .slide-menu-open {
     .head {
