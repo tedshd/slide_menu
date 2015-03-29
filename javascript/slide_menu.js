@@ -13,7 +13,7 @@
             type: 'slide-push',
             addFixedElement: ''
         };
-        var option = option || d4;
+        option = option || d4;
         var type = option.type,
             addFixedElement = option.addFixedElement;
 

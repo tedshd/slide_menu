@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Slide Menu</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/slide_menu.css">
+<style>
+    #bd {
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+    <div id="slide-menu" class="slide-menu-close">
+        <div id="slide-menu-bg"></div>
+    </div>
+    <div id="slide-container" class="">
+        <div id="slide-container-bg">
+            <div class="head">
+                <button id="slide_menu_trigger">OPEN</button>
+            </div>
+            <!-- add code -->
+            <div id="bd">
+                This is body<br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <div id="push-open-layer"></div>
+    </div>
+</body>
+<script src="javascript/slide_menu.js"></script>
+<script>
+    var slideMenu = new initSlideMenu({type: 'slide-over'});
+    document.querySelector('#slide_menu_trigger').addEventListener(
+        'click',
+        function (e) {
+            e.preventDefault();
+            slideMenu.openMenu();
+        }
+    );
+</script>
+</html>
