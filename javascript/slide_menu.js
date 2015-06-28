@@ -34,6 +34,8 @@
             slideContainer.classList.remove('slide-menu-open');
             meniIco.classList.remove('menu-ico-x');
         }
+        // TODO
+        // add touch event
         document.querySelector('#push-open-layer').addEventListener('click', function () {
             slideMenu.classList.add('slide-menu-close');
             slideContainer.classList.remove('slide-menu-open');
