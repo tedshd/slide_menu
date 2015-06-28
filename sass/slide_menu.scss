@@ -15,7 +15,7 @@
         z-index: 100;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, .5);
@@ -27,7 +27,7 @@
 
 #slide-menu, #slide-container, .head {
     @include transition-property(all);
-    @include transition-duration(.3s);
+    @include transition-duration(.1s);
     @include transition-timing-function(ease);
     // @include transition-timing-function(cubic-bezier(0, .1, .2, 1));
 }
@@ -37,30 +37,33 @@
     position: fixed;
     width: 300px;
     height: 100%;
-    left: 0;
+    right: 0;
     background: rgba(128, 128, 255, .8);
     overflow: auto;
+    // transform: translate(0, 0);
 }
 #slide-container {
     background: #666;
     width: 100%;
     min-height: 100%;
-    left: 0;
+    right: 0;
 }
 #slide-menu-bg, #slide-container-bg {
     position: relative;
 }
 #slide-menu.slide-menu-close {
-    left: -300px;
+    right: -300px;
+    // transform: translate(300px, 0);
 }
 .slide-push {
     #slide-container.slide-menu-open {
-        left: 300px;
+        right: 300px;
     }
 }
 
 /* --menu ico-- */
 .menu-ico {
+    float: right;
     width: 30px;
     height: 30px;
     margin: 10px;
@@ -71,7 +74,7 @@
         -ms-transform: scale(1) rotate(0) translate(0, 0);
         @include simple-transform(1, 0, 0, 0, 0, 0, 0, 0);
         @include transition-property(all);
-        @include transition-duration(.5s);
+        @include transition-duration(.3s);
         @include transition-timing-function(ease);
     }
 }
@@ -92,14 +95,14 @@
 /* ---- */
 .slide-menu-open {
     .head {
-        left: 300px;
+        right: 300px;
     }
 }
 .head {
     z-index: 1;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 50px;
     background: rgba(0, 128, 0, .5);
